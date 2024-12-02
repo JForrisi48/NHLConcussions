@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Player Data</title>
+</head>
+<body>
+    <h1>Get Player Data</h1>
+    <form action="/NHLConcussions/GetPlayerServlet" method="GET">
+        <label for="player">Enter Player Name: </label>
+        <input type="text" id="player" name="player" required>
+        <input type="submit" value="Get Player Data">
+    </form>
+
+    <h2>Player Data</h2>
+    <table border="1" id="playerTable">
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Team</th>
+                <th>Position</th>
+                <th>Player</th>
+                <th>Injury Type</th>
+                <th>Cap Hit</th>
+                <th>Games Missed</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
+
